@@ -60,25 +60,27 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/bricks_bg.jpg)
+  background: url(images/website_background.jpg) /*changed namae to be web friendly*/
 		center center fixed no-repeat;
 	background-size: cover;
 
 }
 
 .center {
-    width: 800px;
+    width: 80%; /* added to make div responsive*/
+	max-width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(221, 75, 155, 0.2); /*changed to a magenta color and a higher opacity*/
 	text-align: center;
-	border: 4px dashed white;
+	border-radius: 15px; /*added rounded border, I hope*/
+	/*removed border: 4x dashed white*/
 }
 
    
 #logo {
-    margin-bottom: 16px;
-	border: 3px dashed red;
+    margin-bottom: 50px; /* added more breathing room for logo, added margin-top, rmeoved red dashed border */
+	margin-top: 50px;
 	text-align: center;
 }
 
@@ -103,23 +105,24 @@ h2 {
 }
 
 p {
-	font-family: vendetta, serif;
+	font-family: futura-pt, sans-serif; /* changed font here and for nav*/
 	font-weight: 300;
 	font-style: normal;		
-	font-size: 1.2em;
+	font-size: 2em; /*made font size bigger*/
     line-height: 1.6;
-    color: #fff;
+    color: #b2266c; /*changed font color*/
+	text-align: center; /*made text center*/
 }
 
 nav{
-	font-family: vendetta, serif;
+	font-family: futura-pt, sans-serif;
 	font-weight: 300;
-	width: 400px;
+	font-style: normal;
 	margin: 0 auto;
-	border: dashed turquoise;
-	border-width: 3px 0;
+		/*deleted dashed border*/
 	text-align: center;
-	margin-top: 2em;
+		/* deleted margin-top: 2em; */
+	font-size: 1.3em; /*made font size bigger*/
 	}
     
 nav li{
@@ -132,16 +135,15 @@ Nav a{
 	}
 
 a{
-	color:#444;
+	color:#e86a15; /*changed font color to match logo*/
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 200; /*changed from bold to 200*/
 	}
 
 a:hover{
-	color:black;
-	background:pink;
+	color:rgba(221, 75, 155, 0.9); /*deleted hover color background:pink; and chnaged hover font color to pink*/
 	}
 
-}
+
     
 
