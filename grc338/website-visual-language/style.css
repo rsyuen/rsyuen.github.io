@@ -195,6 +195,10 @@ nav ul li.selected a {
 article {
 	/* background-color: rgb(150,150,150); */
 	max-width: 38em;
+}
+
+article.about {
+	max-width: 38em;
 	margin: auto;
 }
 
