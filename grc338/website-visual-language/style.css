@@ -10,26 +10,31 @@ body {
 }
 
 div.home-container { 
-	background: url(home_background2.png) center center fixed;
-	background-size: cover;
+	/* background: url(home_background2.png) center center;
+	background-size: cover; */
 	position: relative;
 	min-height: 100vh;
-	max-width: 85em;
+	max-width: 80em;
 	margin: auto;
 }
 
 div.container {
 	position: relative;
 	min-height: 100vh;
-	background-color: rgb(245,245,245);
-	max-width: 85em;
+	max-width: 80em;
 	margin: auto;
 }
 
 /* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
 
 
+div.home-container main { 
+	background: url(home_background2.png) center center;
+	background-size: cover;
+}
+
 main { 
+	background-color: rgb(245,245,245);
 	padding: 1rem 2rem 4rem;
 }
 
@@ -57,7 +62,7 @@ h2, h3, h4 {
 
 h2 {
 	font-size: 2rem;
-	margin: 2rem 0rem 0.3rem;
+	margin: 2rem 0rem 0.7rem;
 }
 	
 h3 {
@@ -204,4 +209,10 @@ article.about {
 
 img {
 	border-radius: 10px;
+}
+
+@media screen and (min-width: 80em) {
+	main {
+		border-radius: 10px;
+	}
 }
