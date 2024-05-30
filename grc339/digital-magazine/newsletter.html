@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- You need this to proper scale in actual mobile devices.-->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Archive Magazine</title>
+      <!-- This will be replaced with the actual name of the publication later.  -->
+      <!-- Helpful meta tags to fight GitHub aggresive caching-->
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="0" />
+      <link rel="stylesheet" href="https://use.typekit.net/bko3kfs.css">
+   </head>
+   <body>
+      <div class="container-newsletter">
+         <header>
+            <h1><a href="index.html"><img src="archive-logo.png" alt="archive"></a></h1>
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="photogallery.html">Gallery</a></li>
+                  <li><a href="#">Subscribe</a></li>
+               </ul>
+            </nav>
+         </header>
+         <h2 class="page-title">Stay connected and subscribe!</h2>
+         <form>
+            <section class="personal-info">
+               <h2>Personal Information</h2>
+               <ul>
+                  <li>
+                     <label for="fname">First name:</label>
+                     <input type="text" id="fname" name="fname">
+                  </li>
+                  <li>
+                     <label for="lname">Last name:</label>
+                     <input type="text" id="lname" name="lname">
+                  </li>
+                  <li>
+                     <label for="email">Email:</label>
+                     <input type="text" id="email" name="email">
+                  </li>
+                  <li>
+                     <label for="city">City:</label>
+                     <input type="text" id="city" name="city">
+                  </li>
+                  <li>
+                     <label for="state">State:</label>
+                     <input type="text" id="state" name="state">
+                  </li>
+               </ul>
+            </section>
+            <section class="subscription-type">
+               <h2>What would you like to hear from us?</h2>
+               <ul>
+                  <li>
+                     <input type="checkbox" id="newsletter" name="newsletter">
+                     <label for="newsletter">Newletter</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" id="new" name="new">
+                     <label for="new">New features</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" id="upcoming" name="upcoming">
+                     <label for="upcoming">Upcoming Shows Near You</label>
+                  </li>
+               </ul>
+            </section>
+            <section class="feedback">
+               <h2>Suggestions, comments, or general wonders?</h2>
+               <textarea id="feedback" name="feedback"></textarea>
+            </section>
+            <button type="submit">Sign Up</button>
+         </form>
+         <footer>
+            <p>Archive Magazine. All rights reserved.</p>
+         </footer>
+      </div>
+   </body>
+</html>
