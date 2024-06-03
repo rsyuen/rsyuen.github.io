@@ -12,12 +12,12 @@ body {
     background-color: #FAF4EF;
 }
 
-div.container, div.home-container, div.container-newsletter {
+div.container, div.home-container {
     max-width: 40em;
     margin: auto;
 }
 
-div.container-gallery {
+div.container-gallery, div.container-newsletter  {
     max-width: 40em;
     margin: auto;
 }
@@ -28,8 +28,8 @@ header {
 
 }
 
-header h1 {
-    padding: 2em 0 0.75em;
+h1 {
+    margin: 2em 0 0.75em;
     max-width: 25em;
 }
 
@@ -43,12 +43,9 @@ nav ul li { /*give this guy a mergin to the right */
     /* transition-duration: 0.2s; */
 }
 
-/* nav ul li:hover {
-    border-bottom: 1px solid #d33d18;
-} */
 
 nav ul li a, h3 {
-    color: #D33D18;
+    color: #d23c35;
     font-family: new-kansas, sans-serif;
     font-weight: 300;
     font-style: normal;  
@@ -73,21 +70,21 @@ section.secondary h2 {
 
 section.tertiary h2 {
     font-size: 1.2em;
-    border-top: 1px solid #d33d18;
+    border-top: 1px solid #d23c35;
 }
 
 h2 {
     font-family: new-kansas, sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #D33D18;
+    color: #d23c35;
     margin: 0 0.4em;
     padding-top: 0.2em;
 }
 
 h3 {
     margin: 0.3em 0.6em 0.7em;
-    border-bottom: 1px solid #d33d18;
+    border-bottom: 1px solid #d23c35;
 }
 
 figcaption {
@@ -103,7 +100,7 @@ p {
 
 a {
     text-decoration: none;
-    color: rgb(0,0,0);
+    color: #280004;
 }
 
 aside h2 {
@@ -111,7 +108,7 @@ aside h2 {
 }
 
 aside section.secondary h2 {
-    border-top: 1px solid #d33d18;
+    border-top: 1px solid #d23c35;
 }
 
 aside section.secondary figure {
@@ -125,7 +122,7 @@ aside section.secondary h2 {
 
 footer {
     bottom: 0;
-    color: #D33D18;
+    color: #d23c35;
     margin-left: 0.75em;
     padding: 0.75em 0;
     height: 1.5em;
@@ -158,7 +155,7 @@ main.gallery figcaption {
     font-family: new-kansas, sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #D33D18;
+    color: #d23c35;
     font-size: 1.6em;
     margin: 0.5em 0 0 0.4em;
 }
@@ -175,8 +172,8 @@ input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
 }
 
 nav.gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
 nav.gallery label {
@@ -191,7 +188,7 @@ h2.page-title {
     font-family: new-kansas, sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: #D33D18;
+    color: #d23c35;
     font-size: 1.8em;
 }
 
@@ -246,7 +243,7 @@ button {
     font-weight: 300;
     font-style: normal;
     color: #FAF4EF;
-    background-color: #d33d18;
+    background-color: #d23c35;
     width: 8em;
     height: 3em;
     border-style: none;
@@ -257,12 +254,17 @@ button {
 
 button:hover {
     background-color: #FAF4EF;
-    color: #d33d18;
-    border: 1px solid #d33d18;
+    color: #d23c35;
+    border: 1px solid #d23c35;
 }
 
 form section h2, button, form ul, form textarea {
     margin-left: 0.75em;
+}
+
+/* hover */
+nav ul li a:hover, section.mainstory h2:hover, section.secondary h2:hover, section.tertiary h2:hover{
+    color: #D37D36;
 }
 
 @media only screen and (min-width: 40em) {
@@ -309,7 +311,7 @@ form section h2, button, form ul, form textarea {
 
     div.container-newsletter, div.container-gallery {
         max-width: 65em;
-        padding: 0 1em;
+        padding: 0.75em 1em;
     }
     
 
@@ -412,4 +414,64 @@ form section h2, button, form ul, form textarea {
         grid-row: 3/4;
     }
 
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    body {
+        color: #FAF4EF;
+        background-color: #280004;    
+    }
+
+    a {
+        color: #FAF4EF;
+    }
+
+    h1 {
+        background-image: url("archive-logo-alt.png");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+    }
+
+    img.img-dark {
+        opacity: 0;
+    }
+
+    h2, h2.page-title, main.gallery figcaption {
+        color: #FAF4EF;
+    }
+
+    nav ul li a, h3 {
+        color: #FAF4EF;
+    }
+
+    aside section.secondary h2 {
+        border-top: 1px solid #E2A879;
+    }
+
+    button {
+        color: #FAF4EF;
+        background-color: #D37D36;
+    }
+
+    button:hover {
+        background-color: #FAF4EF;
+        color: #D37D36;
+        border: 1px solid #faf4fa;
+    }
+
+    section.tertiary h2 {
+        border-top: 1px solid #E2A879;
+    }
+
+    footer {
+        color: #E9BEAD;
+    }
+
+    h3 {
+        border-bottom: 1px solid #E2A879;
+    }
+
+    nav ul li a:hover, section.mainstory h2:hover, section.secondary h2:hover, section.tertiary h2:hover{
+        color: #E2A879;
+    }
 }
